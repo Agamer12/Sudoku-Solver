@@ -1,5 +1,5 @@
 ﻿using System;
-class GFG
+class Program
 {
     static int N = 9;
     static int count = 0;
