@@ -20,7 +20,7 @@ class Program
 
         for (int num = 1; num < 10; num++)
         {
-            Console.WriteLine("--- {0} ---", count);
+            Console.WriteLine("--- {0:N0} ---", count);
             count++;
             print(grid);
             if (isSafe(grid, row, col, num))
@@ -157,14 +157,9 @@ class Program
             return;
         }
 
-        
-
-        
-
-
         if (solveSudoku(grid, 0, 0))
         {
-            Console.WriteLine("Solved !! {0}", count);
+            Console.WriteLine("Solved !! {0:N0}", count);
             print(grid);
         }
         else
