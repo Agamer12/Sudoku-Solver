@@ -22,10 +22,10 @@ class Program
         {
             Console.WriteLine("--- {0:N0} ---", count);
             count++;
-            print(grid);
             if (isSafe(grid, row, col, num))
             {
                 grid[row, col] = num;
+                print(grid);
 
                 if (solveSudoku(grid, row, col + 1))
                     return true;
